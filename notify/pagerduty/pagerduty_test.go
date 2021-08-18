@@ -32,10 +32,10 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/alertmanager/config"
-	"github.com/prometheus/alertmanager/notify"
-	"github.com/prometheus/alertmanager/notify/test"
-	"github.com/prometheus/alertmanager/types"
+	"github.com/mike2194/alertmanager/config"
+	"github.com/mike2194/alertmanager/notify"
+	"github.com/mike2194/alertmanager/notify/test"
+	"github.com/mike2194/alertmanager/types"
 )
 
 func TestPagerDutyRetryV1(t *testing.T) {
