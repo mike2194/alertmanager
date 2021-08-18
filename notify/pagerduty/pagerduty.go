@@ -29,10 +29,10 @@ import (
 	commoncfg "github.com/prometheus/common/config"
 	"github.com/prometheus/common/model"
 
-	"github.com/prometheus/alertmanager/config"
-	"github.com/prometheus/alertmanager/notify"
-	"github.com/prometheus/alertmanager/template"
-	"github.com/prometheus/alertmanager/types"
+	"github.com/mike2194/alertmanager/config"
+	"github.com/mike2194/alertmanager/notify"
+	"github.com/mike2194/alertmanager/template"
+	"github.com/mike2194/alertmanager/types"
 )
 
 const maxEventSize int = 512000
