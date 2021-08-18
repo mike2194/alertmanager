@@ -1,4 +1,4 @@
-module github.com/prometheus/alertmanager
+module github.com/mike2194/alertmanager
 
 require (
 	github.com/alecthomas/units v0.0.0-20210208195552-ff826a37aa15
