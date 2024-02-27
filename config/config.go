@@ -19,7 +19,6 @@ import (
 	"net"
 	"net/url"
 	"os"
-    "io/ioutil"
 	"path/filepath"
 	"regexp"
 	"sort"
@@ -45,27 +44,6 @@ func init() {
 		panic(err)
 	}
 	secretTokenJSON = string(b)
-}
-
-// ResolveFileConfigSecretURL takes two values - a config URL and a file path and resolves it to an absolute value
-// if the value is set, that gets returned, otherwise if the file path is set, we return the contents of the file
-// otherwise, we error
-func ResolveFileConfigSecretURL(configValue *SecretURL, filePath string) (*SecretURL, error) {
-	if configValue != nil || filePath == "" {
-		return configValue, nil
-	}
-
-	val, err := ioutil.ReadFile(filePath)
-	if err != nil {
-		return nil, err
-	}
-
-	urlVal, err := url.Parse(string(val))
-	if err != nil {
-		return nil, err
-	}
-
-	return &SecretURL{urlVal}, nil
 }
 
 // Secret is a string that must not be revealed on marshaling.
