@@ -1,6 +1,6 @@
 {
   "name": "@prometheus-io/alertmanager",
-  "version": "0.0.0",
+  "version": "0.27.0-paxos",
   "private": true,
   "scripts": {
     "clean": "rimraf dist/",

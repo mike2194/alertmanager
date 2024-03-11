@@ -176,7 +176,7 @@ func (api *API) getStatusHandler(params general_ops.GetStatusParams) middleware.
 	resp := open_api_models.AlertmanagerStatus{
 		Uptime: &uptime,
 		VersionInfo: &open_api_models.VersionInfo{
-			Version:   &version.Version,
+			Version:   "v0.27.0-paxos",
 			Revision:  &version.Revision,
 			Branch:    &version.Branch,
 			BuildUser: &version.BuildUser,
